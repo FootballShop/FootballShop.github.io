@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body style="background: #E6E6E6">
+    <div class="wrapper_body">
+        <nav class="navbar navbar-inverse">
+            <div class="container flex icons">
+                <div class="flex-in flex">
+                    <span class="glyphicon glyphicon-envelope" style="color:#fff"></span>
+                    <span class="reviews">отзывы</span>
+                    <span class="glyphicon glyphicon-shopping-cart" style="color:#fff"></span>
+                    <span class="reviews">корзина</span>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="caption col-md-3">
+                    <div class="logo col-md-2">
+                        <img src="img/footlogo.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-5 wrapper-h4">
+                    <h4>ИНТЕРНЕТ МАГАЗИН ФУТБОЛЬНОЙ АТРИБУТИКИ</h4>
+                </div>
+                <div class="search col-md-4">
+                    <form class="navbar-form navbar-right">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Поиск">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" type="submit">
+            <i class="glyphicon glyphicon-search"></i>
+          </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-inverse menu">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+                    <a class="navbar-brand" href="#">FootballShop</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">ГЛАВНАЯ</a></li>
+                        <li><a href="products.html">ТОВАРЫ И УСЛУГИ</a></li>
+                        <li><a href="onas.html">О НАС</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Создать логин</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Войти</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+                <div id="wrapper">
+                    <form  onsubmit="return Validate()" name="vform">
+                       <h4>Регистрация</h4>
+                        <div id="username_div">
+                            <label>Имя</label> <br>
+                            <input type="text" name="username" class="textInput">
+                            <div id="name_error"></div>
+                        </div>
+                        <div id="email_div">
+                            <label>Email</label> <br>
+                            <input type="email" name="email" class="textInput">
+                            <div id="email_error"></div>
+                        </div>
+                        <div id="password_div">
+                            <label>Пароль</label> <br>
+                            <input type="password" name="password" class="textInput">
+                        </div>
+                        <div id="pass_confirm_div">
+                            <label>Повторите пароль</label> <br>
+                            <input type="password" name="password_confirm" class="textInput">
+                            <div id="password_error"></div>
+                        </div>
+                        <div class="out-btn">
+                            <input type="submit" name="register" value="зарегистрироваться" class="btn">
+                        </div>
+                    </form>
+                </div>
+    
+        <hr class="line">
+        <footer id="footer">
+            <div class="container">
+                <div class="row">
+                    <ul class="footer-container">
+                        <li class="footer-item footer-1 col-sm-6 col-md-3">
+                            <h4 class="footer-h4">
+                                О компании
+                            </h4>
+                            <div class="footer-content">
+                                <p>
+                                    FootballShop - это интернет магазин спортивной одежды, занимающейся продажей различных видов экипировок для спорта. Основной направленностью интернет ресурса является продажа футбольной атрибутики. У нас огромной выбор товаров для мужчин женщин и детей.<br>
+                                </p>
+                                <ul>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="footer-item footer-2 col-sm-6 col-md-3">
+                            <h4 class="footer-h4">
+                                Дополнительно </h4>
+                            <ul class="list-unstyled footer-list">
+                                <li class="menu_in_footer-item">
+                                    <a href="/about/">Акции</a>
+                                </li>
+                                <li class="menu_in_footer-item">
+                                    <a href="/about/delivery/">Информация о доставке</a>
+                                </li>
+                                <li class="menu_in_footer-item">
+                                    <a href="/about/payment/">Оплата</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="footer-item footer-3 col-sm-6 col-md-3">
+                            <h4 class="footer-h4">
+                                Помощь </h4>
+                            <ul class="list-unstyled footer-list">
+                                <li class="menu_in_footer-item">
+                                    <a href="/about/payment/">Оплата</a>
+                                </li>
+                                <li class="menu_in_footer-item">
+                                    <a href="/about/delivery/">Доставка</a>
+                                </li>
+                                <li class="menu_in_footer-item">
+                                    <a href="/help/guaranty/">Гарантия</a>
+                                </li>
+                                <li class="menu_in_footer-item">
+                                    <a href="/help/credit/">Рассрочка</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="footer-item footer-4 col-sm-6 col-md-3">
+                            <h4 class="footer-h4">
+                                Контакты </h4>
+                            <address>
+                        <ul class="list-unstyled footer-contact-list">
+                            <li><p class="link_address"><i class="fa fa-map-marker"></i> <img src="img/location-pin.png" alt=""><strong> Адрес</strong><br />
+                                <span>
+                                г. Алматы,&nbsp;пр. Абая, д. 44, ТД "Достык"</span>
+                                </p></li>
+                            <li><p class="link_address"><i class="fa fa-phone"></i> <img src="img/phone-receiver.png" alt=""><strong> Телефон</strong><br />
+                               <span><b>+7 (708) 282 85 54</b></span>
+                                </p></li>
+                                 <li><p class="link_address"><img src="img/clock1.png" alt=""><strong>  ПН-ВС: 10:00 - 20:00</strong><br />
+                                </p></li>
+                            <li><p class="link_address"><i class="fa fa-envelope"></i> <img src="img/mess.png" alt="" id="mess"><strong> Email</strong><br />
+                                <span><a class="text-darker" href="mailto:magzhanimangazin@gmail.com" style="color: #cc3300">magzhanimangazin@gmail.com</a></span>
+                                    
+                                </p></li>
+                            <li><p class="link_address"><img src="img/sky.png" alt=""><strong> Skype</strong><br />
+                                <span>Shop</span>
+                                    
+                                </p></li>
+                        </ul>
+                    </address>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="about">
+                    <span class="magazine">© Магазин футбольной атрибутики FootballShop,2009—2017</span>
+                </div>
+                <div class="Policy">
+                    <span id="write1">Политика конфиденциальности
+        </span>
+                    <span id="write2">Пользовательское соглашение
+        </span>
+                </div>
+                <div class="payment">
+                    <span class="visa"><img src="img/visa.png" alt=""></span>
+                    <span class="visa"><img src="img/mastercard.png" alt=""></span>
+                    <span class="visa"><img src="img/amex.png" alt=""></span>
+                    <span id="kaspi"><img src="img/kaspired.png" alt=""></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+    </script>
+     <script defer>
+
+	// SELECTING ALL TEXT ELEMENTS
+	var username = document.forms['vform']['username'];
+	var email = document.forms['vform']['email'];
+	var password = document.forms['vform']['password'];
+	var password_confirm = document.forms['vform']['password_confirm'];
+
+	// SELECTING ALL ERROR DISPLAY ELEMENTS
+	var name_error = document.getElementById('name_error');
+	var email_error = document.getElementById('email_error');
+	var password_error = document.getElementById('password_error');
+
+	// SETTING ALL EVENT LISTENERS
+	username.addEventListener('blur', nameVerify, true);
+	email.addEventListener('blur', emailVerify, true);
+	password.addEventListener('blur', passwordVerify, true);
+
+   
+	function Validate() {
+		// validate username
+		if (username.value == "") {
+			username.style.border = "1px solid #EF5F54";
+			document.getElementById('username_div').style.color = "#EF5F54";
+			name_error.textContent = "Username is required";
+			username.focus();
+			return false;
+		}
+		// validate username
+		if (username.value.length < 3) {
+			username.style.border = "1px solid #EF5F54";
+			document.getElementById('username_div').style.color = "#EF5F54";
+			name_error.textContent = "Username must be at least 3 characters";
+			username.focus();
+			return false;
+		}
+		// validate email
+		if (email.value == "") {
+			email.style.border = "1px solid #EF5F54";
+			document.getElementById('email_div').style.color = "#EF5F54";
+			email_error.textContent = "Email is required";
+			email.focus();
+			return false;
+		}
+		// validate password
+		if (password.value == "") {
+			password.style.border = "1px solid #EF5F54";
+			document.getElementById('password_div').style.color = "#EF5F54";
+			password_confirm.style.border = "1px solid #EF5F54";
+			password_error.textContent = "Password is required";
+			password.focus();
+			return false;
+		}
+
+		// check if the two passwords match
+		if (password.value != password_confirm.value) {
+			password.style.border = "1px solid #EF5F54";
+			document.getElementById('pass_confirm_div').style.color = "#EF5F54";
+			password_confirm.style.border = "1px solid #EF5F54";
+			password_error.innerHTML = "The two passwords do not match";
+			return false;
+		}
+        alert('Вы зарегались успешно!');
+	}
+    
+	// event handler functions
+	function nameVerify() {
+		if (username.value != "") {
+			username.style.border = "1px solid #5e6e66";
+			document.getElementById('username_div').style.color = "#5e6e66";
+			name_error.innerHTML = "";
+			return true;
+		}
+	}
+
+	function emailVerify() {
+		if (email.value != "") {
+			email.style.border = "1px solid #5e6e66";
+			document.getElementById('email_div').style.color = "#5e6e66";
+			email_error.innerHTML = "";
+			return true;
+		}
+	}
+	function passwordVerify() {
+		if (password.value != "") {
+			password.style.border = "1px solid #5e6e66";
+			document.getElementById('pass_confirm_div').style.color = "#5e6e66";
+			document.getElementById('password_div').style.color = "#5e6e66";
+			password_error.innerHTML = "";
+			return true;
+		}
+
+		if (password.value === password_confirm.value) {
+			password.style.border = "1px solid #5e6e66";
+			document.getElementById('pass_confirm_div').style.color = "#5e6e66";
+			password_error.innerHTML = "";
+			return true;
+		}
+	}
+
+</script>
+</body>
+
+</html>
